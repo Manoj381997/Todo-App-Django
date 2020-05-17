@@ -1,2 +1,2 @@
 # Todo-App-Django
-This application is a basic To-do App developed using Django
+A web application used to manage tasks on day-to-day basis, built using python and django.
