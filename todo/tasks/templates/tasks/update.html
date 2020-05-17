@@ -1,0 +1,21 @@
+{% extends "tasks/base.html" %}
+
+{% block content %}
+    <div class="center-column">
+        <h3 class="text-center"> Update Task </h3>
+        <form method="POST" action="">
+            {% csrf_token %}
+                <tr><th>
+                <label for="id_title">Title:</label>
+                </th><td>
+                <input class="input" type="text" name="title" placeholder="{{ form.title }}
+                </td></tr>
+                <tr><th>
+                <label for="complete">Complete:</label>
+                </th><td>
+                <input style="margin: 0 0; padding: 0 0;" type="checkbox" value="{{ form.complete }}
+                </td></tr>
+                <input class="btn btn-info input" type="submit" value="Update" name="Update">
+        </form>
+    </div>
+{% endblock %}
