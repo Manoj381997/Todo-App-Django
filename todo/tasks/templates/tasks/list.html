@@ -11,12 +11,12 @@
         <div class="to-do list">
             {% for task in tasks %}
                 <div class="item-row">
-                    <a class="btn btn-info btn-sm" href="{% url 'update' task.id %}">Update</a>
-                    <a class="btn btn-sm btn-danger" href="{% url 'delete' task.id %}">Delete</a>
+                    <a class="btn btn-info btn-sm karlaFont" href="{% url 'update' task.id %}">Update</a>
+                    <a class="btn btn-sm btn-danger karlaFont" href="{% url 'delete' task.id %}">Delete</a>
                     {% if task.complete %}
-                        <strike>{{ task }}</strike>
+                        <strike style="font-family: 'Raleway', sans-serif;">{{ task }}</strike>
                     {% else %}
-                        <span>{{ task }}</span>
+                        <span style="font-family: 'Raleway', sans-serif;">{{ task }}</span>
                     {% endif %}
                 </div>
             {% endfor %}

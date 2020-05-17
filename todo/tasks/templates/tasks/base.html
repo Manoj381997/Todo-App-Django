@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'tasks/main.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Karla|Raleway|Roboto|Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla&family=Raleway&display=swap" rel="stylesheet">    
     <title>To Do App</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-          <a class="navbar-brand mr-4" href="{% url 'list' %}">To Do</a>
+          <a class="navbar-brand mr-4" href="{% url 'list' %}">
+            <img class="img-fluid" alt="Responsive image" src="{% static 'tasks/todo-list.png' %}" height="40" width="45" onContextMenu="return false;" />
+            <span class="ml-2" style="font-family: 'Josefin Sans', sans-serif;">To-Do</span>
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
     </nav>
     <div class="container">
-        <div class="">
             {% block content %}{% endblock %}    <!-- Block is a section that child views/templates can override and we can have multiple blocks as per our need -->
-        </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://kit.fontawesome.com/f88d2fa247.js" crossorigin="anonymous"></script> -->

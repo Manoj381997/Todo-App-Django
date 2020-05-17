@@ -1,3 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla&family=Raleway&display=swap'); */
+
+/* Custom fonts */
+.josefin-font{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.raleway-font{
+    font-family: 'Raleway', sans-serif;
+}
+
+.karlaFont {
+    font-family: 'Karla', sans-serif;
+}
+
 body {
     background-color: #638CB8;
 }
